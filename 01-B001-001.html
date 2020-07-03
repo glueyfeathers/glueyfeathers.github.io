@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L01-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.19 },
+    { label: "b", start: 2.44, end: 4.51 },
+    { label: "c", start: 4.76, end: 6.47 },
+    { label: "d", start: 6.72, end: 7.71 },
+    { label: "e", start: 7.96, end: 9.89 },
+    { label: "f", start: 10.14, end: 12.51 },
+    { label: "g", start: 12.76, end: 14.15 },
+    { label: "h", start: 14.4, end: 15.29 },
+    { label: "i", start: 15.54, end: 17.37 },
+    { label: "j", start: 17.62, end: 19.33 },
+    { label: "k", start: 19.58, end: 20.63 },
+    { label: "l", start: 20.88, end: 22.11 },
+    { label: "m", start: 22.36, end: 23.97 },
+    { label: "n", start: 24.22, end: 26.27 },
+    { label: "o", start: 26.52, end: 28.15 },
+    { label: "p", start: 28.4, end: 30.19 },
+    { label: "q", start: 30.44, end: 31.41 },
+    { label: "r", start: 31.66, end: 32.93 },
+    { label: "s", start: 33.18, end: 35.01 },
+    { label: "t", start: 35.26, end: 36.25 },
+    { label: "u", start: 36.5, end: 38.51 },
+    { label: "v", start: 38.76, end: 40.67 },
+    { label: "w", start: 40.92, end: 43.51 },
+    { label: "x", start: 43.76, end: 46.35 },
+    { label: "y", start: 46.6, end: 48.07 },
+    { label: "z", start: 48.32, end: 51.85 },
+    { label: "aa", start: 52.1, end: 57.45 },
+    { label: "ab", start: 57.7, end: 58.57 },
+    { label: "ac", start: 58.82, end: 59.39 },
+    { label: "ad", start: 59.64, end: 61.61 },
+    { label: "ae", start: 61.86, end: 63.11 },
+    { label: "af", start: 63.36, end: 65.39 },
+    { label: "ag", start: 65.64, end: 66.95 },
+    { label: "ah", start: 67.2, end: 70.11 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "01-B001-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L01-1&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='02-B002-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='02-B002-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">你需要我幫忙嗎?</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tb" class="txs">我好像迷路了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tc" class="txs">你要去哪裡?</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">請問，</div><div id="Te" class="txs">到師大怎麼走？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tf" class="txs">你從這裡往前走，</div><div id="Tg" class="txs">到了下一個路口，</div><div id="Th" class="txs">右轉 -</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ti" class="txs">右轉就到了嗎？</div> <div id="Tj" class="txs">聽起來不遠。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tk" class="txs">還沒到！</div> <div id="Tl" class="txs">你右轉以後，</div><div id="Tm" class="txs">是和平東路一段，</div><div id="Tn" class="txs">再往前一直走，</div><div id="To" class="txs">過了第二個紅綠燈，</div><div id="Tp" class="txs">就看見師大了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tq" class="txs">謝謝，</div><div id="Tr" class="txs">我知道了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">你的中文很好。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tt" class="txs">謝謝，</div><div id="Tu" class="txs">我還得多學一點。</div><div id="Tv" class="txs">能不能再告訴我 ，</div><div id="Tw" class="txs">這附近有沒有提款機？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tx" class="txs">從這裡往和平東路走，</div><div id="Ty" class="txs">好像沒有銀行，</div><div id="Tz" class="txs">不過大部分的超商裡應該都有。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taa" class="txs">你說的「超商」是「7-11」那種便利商店嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">是的。</div><div id="Tac" class="txs">對了，</div><div id="Tad" class="txs">郵局也可以提錢。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tae" class="txs">我看見了，</div><div id="Taf" class="txs">那邊有一家便利商店。</div><div id="Tag" class="txs">謝謝，謝謝!</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tah" class="txs">不客氣。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0101.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

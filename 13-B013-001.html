@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L07-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 0.91 },
+    { label: "b", start: 1.16, end: 2.35 },
+    { label: "c", start: 2.6, end: 3.51 },
+    { label: "d", start: 3.76, end: 5.31 },
+    { label: "e", start: 5.56, end: 9.69 },
+    { label: "f", start: 9.94, end: 11.73 },
+    { label: "g", start: 11.98, end: 13.33 },
+    { label: "h", start: 13.58, end: 14.61 },
+    { label: "i", start: 14.86, end: 16.95 },
+    { label: "j", start: 17.2, end: 18.25 },
+    { label: "k", start: 18.5, end: 22.19 },
+    { label: "l", start: 22.44, end: 23.13 },
+    { label: "m", start: 23.38, end: 28.21 },
+    { label: "n", start: 28.46, end: 30.03 },
+    { label: "o", start: 30.28, end: 33.21 },
+    { label: "p", start: 33.46, end: 35.35 },
+    { label: "q", start: 35.6, end: 39.27 },
+    { label: "r", start: 39.52, end: 41.91 },
+    { label: "s", start: 42.16, end: 43.59 },
+    { label: "t", start: 43.84, end: 47.47 },
+    { label: "u", start: 47.72, end: 50.01 },
+    { label: "v", start: 50.26, end: 51.59 },
+    { label: "w", start: 51.84, end: 52.79 },
+    { label: "x", start: 53.04, end: 53.95 },
+    { label: "y", start: 54.2, end: 55.99 },
+    { label: "z", start: 56.24, end: 58.07 },
+    { label: "aa", start: 58.32, end: 60.27 },
+    { label: "ab", start: 60.52, end: 61.33 },
+    { label: "ac", start: 61.58, end: 64.91 },
+    { label: "ad", start: 65.16, end: 66.27 },
+    { label: "ae", start: 66.52, end: 70.31 },
+    { label: "af", start: 70.56, end: 73.15 },
+    { label: "ag", start: 73.4, end: 75.61 },
+    { label: "ah", start: 75.86, end: 77.85 },
+    { label: "ai", start: 78.1, end: 78.87 },
+    { label: "aj", start: 79.12, end: 81.85 },
+    { label: "ak", start: 82.1, end: 85.05 },
+    { label: "al", start: 85.3, end: 87.69 },
+    { label: "am", start: 87.94, end: 88.73 },
+    { label: "an", start: 88.98, end: 91.21 },
+    { label: "ao", start: 91.46, end: 93.19 },
+    { label: "ap", start: 93.44, end: 96.95 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "13-B013-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='12-B012-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='12-B012-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L07-1&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='14-B014-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='14-B014-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">東健，</div><div id="Tb" class="txs">要出去啊？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tc" class="txs">是啊 ！</div> <div id="Td" class="txs">垃圾車快來了，</div><div id="Te" class="txs">我得趕快下樓去倒垃丟垃圾？</div> <div id="Tf" class="txs">今天是星期三，</div><div id="Tg" class="txs">不收垃圾啊！</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">真的嗎？</div> <div id="Ti" class="txs">我以為天天都收。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tj" class="txs">不是，</div><div id="Tk" class="txs">每個星期三和星期天是不收的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tl" class="txs">那麼，</div><div id="Tm" class="txs">我這些汽水繼和紙杯也不能拿出去回收了嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tn" class="txs">是啊！</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="To" class="txs">為什麼在台北倒垃圾這麼麻煩？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tp" class="txs">剛開始的時候，</div><div id="Tq" class="txs">台北人也覺得這個規定很麻煩，</div><div id="Tr" class="txs">現在大家都習慣了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">更麻煩的是，</div><div id="Tt" class="txs">我一定要在晚上九點把垃圾拿出去，</div><div id="Tu" class="txs">要不然就不能倒了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tv" class="txs">你說的對，</div><div id="Tw" class="txs">有一次，</div><div id="Tx" class="txs">我一回來，</div><div id="Ty" class="txs">垃圾車就來了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tz" class="txs">我馬上放下皮包，</div><div id="Taa" class="txs">跑出去倒垃圾。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">對啊！</div> <div id="Tac" class="txs">我常常看到有人追垃圾車。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tad" class="txs">晚上，</div><div id="Tae" class="txs">這麼多人從家裡拿著垃圾走出來，</div><div id="Taf" class="txs">一起站著等垃圾車，</div><div id="Tag" class="txs">你不覺得很有趣嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tah" class="txs">大家常一邊聊天，</div><div id="Tai" class="txs">一邊等，</div><div id="Taj" class="txs">看起來真的很有意思</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tak" class="txs">雖然倒垃圾有點麻煩，</div><div id="Tal" class="txs">但是好像也不壞。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tam" class="txs">那麼，</div><div id="Tan" class="txs">我這包垃圾怎麼辦？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tao" class="txs">你拿回家去，</div><div id="Tap" class="txs">明天再倒吧 ！</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0701.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

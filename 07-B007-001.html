@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L04-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 3.67 },
+    { label: "b", start: 3.92, end: 16.27 },
+    { label: "c", start: 16.52, end: 28.03 },
+    { label: "d", start: 28.28, end: 29.87 },
+    { label: "e", start: 30.12, end: 32.39 },
+    { label: "f", start: 32.64, end: 34.95 },
+    { label: "g", start: 35.2, end: 40.09 },
+    { label: "h", start: 40.34, end: 46.19 },
+    { label: "i", start: 46.44, end: 56.19 },
+    { label: "j", start: 56.44, end: 60.47 },
+    { label: "k", start: 60.72, end: 64.13 },
+    { label: "l", start: 64.38, end: 65.47 },
+    { label: "m", start: 65.72, end: 66.31 },
+    { label: "n", start: 66.56, end: 67.99 },
+    { label: "o", start: 68.24, end: 71.05 },
+    { label: "p", start: 71.3, end: 74.97 },
+    { label: "q", start: 75.22, end: 77.93 },
+    { label: "r", start: 78.18, end: 80.35 },
+    { label: "s", start: 80.6, end: 81.71 },
+    { label: "t", start: 81.96, end: 84.59 },
+    { label: "u", start: 84.84, end: 88.63 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "07-B007-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='06-B006-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='06-B006-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L04-1&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='08-B008-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='08-B008-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">我現在上午學中文，</div><div id="Tb" class="txs">下午兩點以後都可以，</div><div id="Tc" class="txs">但是我希望一個禮拜教三天就好了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">妳除了法文，</div><div id="Te" class="txs">中文，</div><div id="Tf" class="txs">還會什麼語言？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tg" class="txs">我還會說西班牙語和英文。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">妳教過西班牙語嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ti" class="txs">我大學三年級的暑假，</div><div id="Tj" class="txs">當過西班牙語老師。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tk" class="txs">妳的工作經驗聽起來很不錯。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tl" class="txs">謝謝您。</div><div id="Tm" class="txs">對了，</div><div id="Tn" class="txs">我想請教一下，</div><div id="To" class="txs">貴中心老師的薪水怎麼算？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tp" class="txs">我們是按照大學教授的鐘點費算的。</div><div id="Tq" class="txs">薪水跟大學老師的一樣。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tr" class="txs">我很想試試這份工作。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">歡迎妳，</div><div id="Tt" class="txs">妳下個月一號就可以來嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tu" class="txs">可以的。謝謝。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0401.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

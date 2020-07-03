@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L02-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.55 },
+    { label: "b", start: 2.8, end: 3.99 },
+    { label: "c", start: 4.24, end: 5.73 },
+    { label: "d", start: 5.98, end: 6.73 },
+    { label: "e", start: 6.98, end: 9.83 },
+    { label: "f", start: 10.08, end: 13.59 },
+    { label: "g", start: 13.84, end: 16.33 },
+    { label: "h", start: 16.58, end: 18.27 },
+    { label: "i", start: 18.52, end: 21.77 },
+    { label: "j", start: 22.02, end: 25.15 },
+    { label: "k", start: 25.4, end: 27.49 },
+    { label: "l", start: 27.74, end: 31.49 },
+    { label: "m", start: 31.74, end: 33.09 },
+    { label: "n", start: 33.34, end: 35.71 },
+    { label: "o", start: 35.96, end: 39.13 },
+    { label: "p", start: 39.38, end: 41.79 },
+    { label: "q", start: 42.04, end: 45.67 },
+    { label: "r", start: 45.92, end: 47.81 },
+    { label: "s", start: 48.06, end: 49.45 },
+    { label: "t", start: 49.7, end: 52.59 },
+    { label: "u", start: 52.84, end: 55.05 },
+    { label: "v", start: 55.3, end: 57.47 },
+    { label: "w", start: 57.72, end: 59.99 },
+    { label: "x", start: 60.24, end: 61.51 },
+    { label: "y", start: 61.76, end: 63.27 },
+    { label: "z", start: 63.52, end: 64.23 },
+    { label: "aa", start: 64.48, end: 65.51 },
+    { label: "ab", start: 65.76, end: 67.73 },
+    { label: "ac", start: 67.98, end: 68.59 },
+    { label: "ad", start: 68.84, end: 72.59 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "03-B003-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='02-B002-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='02-B002-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L02-1&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='04-B004-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='04-B004-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">安同，</div><div id="Tb" class="txs">早！</div><div id="Tc" class="txs">你要去哪裡？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">早！</div><div id="Te" class="txs">我約了朋友一起去看電影，你呢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tf" class="txs">我要去看電腦展。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tg" class="txs">你去哪裡看電腦展？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">世貿展覽館，</div><div id="Ti" class="txs">我現在要去對面坐公車。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tj" class="txs">那裡離台北101不遠，</div><div id="Tk" class="txs">妳怎麼不坐捷運呢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tl" class="txs">朋友告訴我公車直接到展覽館，</div><div id="Tm" class="txs">不必換車。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tn" class="txs">坐捷運也很方便。</div><div id="To" class="txs">妳先坐2號線到台北車站，</div><div id="Tp" class="txs">再換車到展覽館。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tq" class="txs">聽起來坐捷運比較麻煩。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tr" class="txs">一點也不麻煩，</div><div id="Ts" class="txs">捷運比較快，</div><div id="Tt" class="txs">坐公車要花一個多小時。</div><div id="Tu" class="txs">你還是坐捷運吧！</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tv" class="txs">捷運站遠嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tw" class="txs">捷運站就在前面。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tx" class="txs">謝謝！</div><div id="Ty" class="txs">我得趕快走了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tz" class="txs">別急，</div><div id="Taa" class="txs">走慢一點。</div><div id="Tab" class="txs">捷運的班次很多。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tac" class="txs">好，</div><div id="Tad" class="txs">我們下禮拜見。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0201.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

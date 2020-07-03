@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L03-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 0.87 },
+    { label: "b", start: 1.12, end: 3.53 },
+    { label: "c", start: 3.78, end: 4.75 },
+    { label: "d", start: 5, end: 7.69 },
+    { label: "e", start: 7.94, end: 9.87 },
+    { label: "f", start: 10.12, end: 11.05 },
+    { label: "g", start: 11.3, end: 13.13 },
+    { label: "h", start: 13.38, end: 15.61 },
+    { label: "i", start: 15.86, end: 18.81 },
+    { label: "j", start: 19.06, end: 20.03 },
+    { label: "k", start: 20.28, end: 24.75 },
+    { label: "l", start: 25, end: 28.21 },
+    { label: "m", start: 28.46, end: 32.97 },
+    { label: "n", start: 33.22, end: 37.23 },
+    { label: "o", start: 37.48, end: 40.33 },
+    { label: "p", start: 40.58, end: 42.59 },
+    { label: "q", start: 42.84, end: 44.35 },
+    { label: "r", start: 44.6, end: 46.43 },
+    { label: "s", start: 46.68, end: 47.63 },
+    { label: "t", start: 47.88, end: 49.39 },
+    { label: "u", start: 49.64, end: 51.71 },
+    { label: "v", start: 51.96, end: 52.03 },
+    { label: "w", start: 52.28, end: 52.91 },
+    { label: "x", start: 53.16, end: 55.51 },
+    { label: "y", start: 55.76, end: 56.03 },
+    { label: "z", start: 56.28, end: 56.75 },
+    { label: "aa", start: 57, end: 57.21 },
+    { label: "ab", start: 57.46, end: 59.03 },
+    { label: "ac", start: 59.28, end: 61.27 },
+    { label: "ad", start: 61.52, end: 62.11 },
+    { label: "ae", start: 62.36, end: 62.71 },
+    { label: "af", start: 62.96, end: 63.39 },
+    { label: "ag", start: 63.64, end: 63.67 },
+    { label: "ah", start: 63.92, end: 64.89 },
+    { label: "ai", start: 65.14, end: 66.51 },
+    { label: "aj", start: 66.76, end: 67.53 },
+    { label: "ak", start: 67.78, end: 68.79 },
+    { label: "al", start: 69.04, end: 69.67 },
+    { label: "am", start: 69.92, end: 70.91 },
+    { label: "an", start: 71.16, end: 72.27 },
+    { label: "ao", start: 72.52, end: 74.15 },
+    { label: "ap", start: 74.4, end: 74.71 },
+    { label: "aq", start: 74.96, end: 75.03 },
+    { label: "ar", start: 75.28, end: 78.09 },
+    { label: "as", start: 78.34, end: 79.21 },
+    { label: "at", start: 79.46, end: 80.63 },
+    { label: "au", start: 80.88, end: 81.63 },
+    { label: "av", start: 81.88, end: 83.41 },
+    { label: "aw", start: 83.66, end: 84.71 },
+    { label: "ax", start: 84.96, end: 84.99 },
+    { label: "ay", start: 85.24, end: 86.35 },
+    { label: "az", start: 86.6, end: 87.69 },
+    { label: "ba", start: 87.94, end: 88.37 },
+    { label: "bb", start: 88.62, end: 91.79 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "05-B005-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='04-B004-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='04-B004-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L03-1&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='06-B006-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='06-B006-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">早，</div><div id="Tb" class="txs">妳今天來得真早。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tc" class="txs">是啊!</div><div id="Td" class="txs">我今天是搭捷運來的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Te" class="txs">今天的考試，</div><div id="Tf" class="txs">妳準備了嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tg" class="txs">準備得差不多了，</div><div id="Th" class="txs">應該可以考得不錯。</div><div id="Ti" class="txs">你覺得聽寫很容易吧？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tj" class="txs">是啊，</div><div id="Tk" class="txs">日本人從小學就開始學寫漢字。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tl" class="txs">我現在也覺得寫字不難，</div><div id="Tm" class="txs">因為我在美國念高中的時候就學過了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tn" class="txs">妳在這個語言中心學了多久了？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="To" class="txs">我才學了半年，你呢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tp" class="txs">我來了快一年了，</div><div id="Tq" class="txs">可是我說話，</div><div id="Tr" class="txs">還說得不夠流利。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">雖然我只來了半年，</div><div id="Tt" class="txs">但是我知道我的中文進步了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tu" class="txs">我覺得在說中文的環境裡學中文，</div><div id="Tv" class="txs">進步得比較快。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tw" class="txs">我同意。</div><div id="Tx" class="txs">我希望回國的時候能看中文報紙。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ty" class="txs">我想妳一定可以。</div><div id="Tz" class="txs">今天下了課，</div><div id="Taa" class="txs">妳要去哪裡？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">我要去活動中心跟語言交換的朋友見面。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tac" class="txs">妳說的活動中心在哪裡？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tad" class="txs">在一樓有麵包店的那棟樓裡面，</div><div id="Tae" class="txs">我們一起去聽過一次演講，</div><div id="Taf" class="txs">記得嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tag" class="txs">喚，</div><div id="Tah" class="txs">我想起來了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tai" class="txs">我才學了半年，你呢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taj" class="txs">我來了快一年了，</div><div id="Tak" class="txs">可是我說話，</div><div id="Tal" class="txs">還說得不夠流利。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tam" class="txs">雖然我只來了半年，</div><div id="Tan" class="txs">但是我知道我的中文進步了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tao" class="txs">我覺得在說中文的環境裡學中文，</div><div id="Tap" class="txs">進步得比較快。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taq" class="txs">我同意。</div><div id="Tar" class="txs">我希望回國的時候能看中文報紙。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tas" class="txs">我想妳一定可以。</div><div id="Tat" class="txs">今天下了課，</div><div id="Tau" class="txs">妳要去哪裡？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tav" class="txs">我要去活動中心跟語言交換的朋友見面。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taw" class="txs">妳說的活動中心在哪裡？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tax" class="txs">在一樓有麵包店的那棟樓裡面，</div><div id="Tay" class="txs">我們一起去聽過一次演講，</div><div id="Taz" class="txs">記得嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tba" class="txs">喚，</div><div id="Tbb" class="txs">我想起來了。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0301.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

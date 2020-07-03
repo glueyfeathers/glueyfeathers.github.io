@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L04-2 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 3.15 },
+    { label: "b", start: 3.4, end: 5.23 },
+    { label: "c", start: 5.48, end: 7.63 },
+    { label: "d", start: 7.88, end: 15.97 },
+    { label: "e", start: 16.22, end: 20.53 },
+    { label: "f", start: 20.78, end: 23.67 },
+    { label: "g", start: 23.92, end: 29.63 },
+    { label: "h", start: 29.88, end: 31.89 },
+    { label: "i", start: 32.14, end: 33.85 },
+    { label: "j", start: 34.1, end: 36.41 },
+    { label: "k", start: 36.66, end: 39.91 },
+    { label: "l", start: 40.16, end: 43.99 },
+    { label: "m", start: 44.24, end: 47.87 },
+    { label: "n", start: 48.12, end: 52.89 },
+    { label: "o", start: 53.14, end: 58.55 },
+    { label: "p", start: 58.8, end: 63.27 },
+    { label: "q", start: 63.52, end: 65.97 },
+    { label: "r", start: 66.22, end: 67.07 },
+    { label: "s", start: 67.32, end: 69.19 },
+    { label: "t", start: 69.44, end: 72.47 },
+    { label: "u", start: 72.72, end: 75.27 },
+    { label: "v", start: 75.52, end: 79.49 },
+    { label: "w", start: 79.74, end: 81.87 },
+    { label: "x", start: 82.12, end: 83.71 },
+    { label: "y", start: 83.96, end: 87.37 },
+    { label: "z", start: 87.62, end: 94.19 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "08-B008-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='07-B007-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='07-B007-001.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L04-2&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;1&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='09-B009-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='09-B009-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">高美玲來了一年了，</div><div id="Tb" class="txs">按照台灣的法律，</div><div id="Tc" class="txs">她已經可以打工了，</div><div id="Td" class="txs">所以她的台灣朋友給她介紹了一個在大學語言中心教法文的工作。</div><div id="Te" class="txs">雖然高美玲覺得自己的經驗還不夠，</div><div id="Tf" class="txs">可是決定去試一試。</div><div id="Tg" class="txs">所以她帶著履歷表到語言中心去跟主任面談。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">這位主任姓黃，</div><div id="Ti" class="txs">是法國華僑，</div><div id="Tj" class="txs">在台灣住了十幾年，</div><div id="Tk" class="txs">他也在大學工作了十年了。</div><div id="Tl" class="txs">高美玲在辦公室跟他談話的時候，</div><div id="Tm" class="txs">他先問高美玲在法國的工作經驗，</div><div id="Tn" class="txs">再問她在台灣學中文跟生活的情形。</div><div id="To" class="txs">黃主任覺得高美玲的經驗很適合這份工作。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tp" class="txs">黃主任也給高美玲介紹了上課的書，</div><div id="Tq" class="txs">還跟她說明了工作環境。</div><div id="Tr" class="txs">然後，</div><div id="Ts" class="txs">黃主任告訴高美玲，</div><div id="Tt" class="txs">薪水按照工作的時間算，</div><div id="Tu" class="txs">每個月的月底發薪水。</div><div id="Tv" class="txs">高美玲覺得這份工作聽起來很不錯，</div><div id="Tw" class="txs">所以馬上就答應了。</div><div id="Tx" class="txs">黃主任對她說，</div><div id="Ty" class="txs">下個月一號就開始上班。</div><div id="Tz" class="txs">高美玲沒想到這次的面談這麼順利。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/0402.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
