@@ -1,13 +1,13 @@
 @font-face {
-    font-family: font1;
+    font-family: DFKai-SB,BiauKai,serif;
     src: url('../fonts/BiauKai.ttf')  format('truetype');
     font-weight: normal; font-style: normal; 
 }
 
 body {
-    font-family: font1;
+    font-family: BiauKai;
     direction: LTR;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: normal;
     font-style: normal;
     color: #000000;
@@ -688,7 +688,7 @@ div.footer-line {
 
 span.footer {
     font-size: 80%;
-    font-family: font1;
+    font-family: BiauKai;
 }
 
 span.ref {
