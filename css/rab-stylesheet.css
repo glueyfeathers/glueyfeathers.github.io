@@ -1,14 +1,11 @@
 @font-face {
-    font-family: 'biaukai';
-    src: url('../fonts/biaukai-webfont.woff2') format('woff2'),
-         url('../fonts/biaukai-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: font1;
+    src: url('../fonts/BiauKai.otf')  format('opentype');
+    font-weight: normal; font-style: normal; 
 }
 
 body {
-    font-family: 'biaukai';
+    font-family: font1;
     direction: LTR;
     font-size: 23px;
     font-weight: normal;
@@ -691,7 +688,7 @@ div.footer-line {
 
 span.footer {
     font-size: 80%;
-    font-family: 'biaukai';
+    font-family: font1;
 }
 
 span.ref {
@@ -1049,7 +1046,7 @@ body {
     color: #2c2c2c;
 }
 .tooltipster-theme .tooltipster-content {
-    font-family: 'biaukai', 'Arial', sans-serif;
+    font-family: font1, 'Arial', sans-serif;
     font-size: 15px;
     line-height: 16px;
     padding: 8px 10px;
