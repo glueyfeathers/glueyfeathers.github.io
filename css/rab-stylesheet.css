@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'biaukai';
-    src: url('font/biaukai-webfont.woff2') format('woff2'),
-         url('font/biaukai-webfont.woff') format('woff');
+    src: url('../fonts/biaukai-webfont.woff2') format('woff2'),
+         url('../fonts/biaukai-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
