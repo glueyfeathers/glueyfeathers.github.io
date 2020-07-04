@@ -1,6 +1,6 @@
 @font-face {
     font-family: font1;
-    src: url('../fonts/BiauKai.otf')  format('opentype');
+    src: url('../fonts/BiauKai.woff')  format('woff');
     font-weight: normal; font-style: normal; 
 }
 
