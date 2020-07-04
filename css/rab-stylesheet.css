@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: BiauKai;
+    font-family: biaukairegular;
     direction: LTR;
     font-size: 23px;
     font-weight: normal;
@@ -690,7 +690,7 @@ div.footer-line {
 
 span.footer {
     font-size: 80%;
-    font-family: BiauKai;
+    font-family: biaukairegular;
 }
 
 span.ref {
@@ -1048,7 +1048,7 @@ body {
     color: #2c2c2c;
 }
 .tooltipster-theme .tooltipster-content {
-    font-family: font1, 'Arial', sans-serif;
+    font-family: biaukairegular, 'Arial', sans-serif;
     font-size: 15px;
     line-height: 16px;
     padding: 8px 10px;
