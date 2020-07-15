@@ -1,13 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+<title>Contents - Home</title>
+<style type="text/css">
 @font-face {
     font-family: font1;
-    src: url('../fonts/BiauKai.woff2')  format('woff2');
+    src: url('fonts/BiauKai.ttf')  format('truetype');
     font-weight: normal; font-style: normal; 
 }
 
 body {
     font-family: font1;
     direction: LTR;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     color: #000000;
@@ -672,6 +679,11 @@ div.hlp5 {
     color: HighlighterPenTextColor;
 }
 
+div.selected {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
+
 div.footer {
     margin-top: 1.5em;
     padding-top: 12px;
@@ -679,8 +691,6 @@ div.footer {
     padding-left: 12px;
     padding-right: 12px;
     background-color: #E0E0E0;
-    direction: LTR;
-    left: LTR;
 }
 
 div.footer-line {
@@ -688,7 +698,6 @@ div.footer-line {
 
 span.footer {
     font-size: 80%;
-    font-family: font1;
 }
 
 span.ref {
@@ -947,259 +956,212 @@ button.message-button {
     padding: 0 16px;
 }
 
-img { max-width: 100%; }
-.txs { display: inline; }
-
-@media(max-width: 368px) {
-    .navigation-top span {
-        font-size: 14px;
-    }
-}
-body {
-    background-color: #F0F0F0;
-}
-
-body {
-    margin-left: 0;
-    margin-right: 0;
-}
-#toolbar-top {
-    background: #000000;
-    border-bottom: 1px solid #DDD;
-    -moz-box-shadow: 0 5px 5px -5px #CCC;
-    -webkit-box-shadow: 0 5px 5px -5px #CCC;
-    box-shadow: 0 5px 5px -5px #CCC;
-    top: 0px;
-    width: 100%;
-    position: fixed;
-    z-index: 2000;
-    text-align: center;
-}
 #content {
-    max-width: 800px;
-    height: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 80px auto 150px;
+    max-width: 500px;
 }
-#toolbar-bottom {
-    background: #FFFFFF;
-    border-top: 1px solid #DDD;
-    -moz-box-shadow: 0 -5px 5px -5px #CCC;
-    -webkit-box-shadow: 0 -5px 5px -5px #CCC;
-    box-shadow: 0 -5px 5px -5px #CCC;
-    bottom: 0px;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-}
-.audio-player {
-    padding-top: 20px;
-    padding-bottom: 12px;
-}
-.navigation-top {
-    text-align: center;
-    padding-top: 16px;
-    padding-bottom: 10px;
-}
-.button {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #CCCCCC;
-    background: #F0F0F0;
-    padding: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-decoration: none;
-    color: #808080;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-}
-.button:hover {
-    background: #DDDDDD;
-}
-.button a:link, .button a:visited {
-    text-decoration: none;
-    color: #808080;
-	   font-weight: bold;
-}
-.selectable {
-    cursor: pointer;
-}
-.txs.selected:hover {
-    background-color: #FFFF20;
-    cursor: pointer;
-}
-.txs.selected {
-    background-color: #FFFF99;
-}
-.txs:hover {
-    background-color: #EEEEEE;
-    cursor: pointer;
-}
-.tooltipster-theme {
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
-    color: #2c2c2c;
-}
-.tooltipster-theme .tooltipster-content {
-    font-family: font1, 'Arial', sans-serif;
-    font-size: 15px;
-    line-height: 16px;
-    padding: 8px 10px;
-}
-#book-selector {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #CCCCCC;
-    background: #F0F0F0;
-    padding: 2px;
-    margin-left: 4px;
-    margin-right: 2px;
-    text-decoration: none;
-    color: #808080;
-    font-weight: bold;
-    cursor: pointer;	
-}
-#book-selector a {
-    text-decoration:none;
-    color: inherit;
-}
-#book-selector:hover {
-    background-color: #DDDDDD;
-    cursor: pointer;
-}
-#chapter-selector {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #CCCCCC;
-    background: #F0F0F0;
-    padding: 2px;
-    margin-left: 2px;
-    margin-right: 4px;
-    text-decoration: none;
-    color: #808080;
-    font-weight: bold;
-    cursor: pointer;	
-}
-#chapter-selector a {
-    text-decoration:none;
-    color: inherit;
-}
-#chapter-selector:hover {
-    background-color: #DDDDDD;
-    cursor: pointer;
-}
-#book-menu {
-    position: absolute;
-    visibility: hidden;
-    overflow: auto;
-    border: 1px solid #D0D0D0;
-    background-color: #F9F9F9;
-    padding: 5px;
-    -webkit-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    -moz-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    box-shadow: 2px 2px 5px 0px #e0e0e0;
-    z-index: 999;
-}
-#chapter-menu {
-    position: absolute;
-    visibility: hidden;
-    overflow: auto;
-    border: 1px solid #D0D0D0;
-    background-color: #F9F9F9;
-    padding: 5px;
-    -webkit-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    -moz-box-shadow: 2px 2px 5px 0px #e0e0e0;
-    box-shadow: 2px 2px 5px 0px #e0e0e0;
-    z-index: 999;
-}
-.book-menu-item {
-    color: black;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-.book-menu-item a {
-    text-decoration:none;
-    color: inherit;
-    width: 100%;
-    display: block;
-}
-.book-menu-item:hover {
-    background-color: #EEEEEE;
-    cursor: pointer;
-}
-.chapter-table {
-    table-layout: fixed;
-    width: 100%;
-    border: none;
-}
-.chapter-menu-cell {
-    padding-left: 2px;
-    padding-right: 2px;
-}
-.chapter-menu-item {
-    text-align: center;
-    color: black;
-    background-color: #EEEEEE;
-    width: 100%;
-    display: block;
-    border: 1px solid #E0E0E0;
-    padding: 6px 0px 6px 0px;
-}
-.chapter-menu-item a {
-    text-decoration:none;
-    color: inherit;
-    width: 100%;
-    display: block;
-}
-.chapter-menu-item:hover {
-    background-color: #DDDDDD;
-    cursor: pointer;
-}
-.intro-menu-item {
-    color: black;
-    background-color: #EEEEEE;
-    text-align: center;
-    border: 1px solid #E0E0E0;
-    padding: 4px 6px 4px 6px;
-    margin: 2px 2px 2px 4px;
-}
-.intro-menu-item a {
-    text-decoration:none;
-    color: inherit;
-    width: 100%;
-    display: block;
-}
-.intro-menu-item:hover {
-    background-color: #DDDDDD;
-    cursor: pointer;
-}
-.icon-launch { height: 40px; width: 28px; margin-left: 2px; margin-right: 2px; }
-.float-left { float: left; overflow:hidden; }
-.float-right { float: right; overflow:hidden; }
+</style>
+</head>
 
-.video-container { position:relative; height:0; overflow:hidden; background-size:contain; background-repeat:no-repeat; background-position:center; }
-.video-16-9 { padding-bottom:56.25%; }
-.video-youtube { padding-top:0px; }
-.video-vimeo { padding-top:0px; }
-.video-jesus { padding-top:0px; padding-bottom: calc(56.25% + 16px); background-position: 8px 8px; background-size: calc(100% - 16px);}
-.video-jesus-no-calc { padding-top:0px; padding-bottom: 59%; background-position: 8px 8px; background-size: 95%;}
-.video-container iframe, .video-container object, .video-container embed { position:absolute; top:0; left:0; width:100%; height:100%; }
-.video-container video { position:absolute; top:0; left:0; width:100%; height:100%; }
-.video-container img { max-height:100%; max-width:100%; width:18%; height:auto; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; opacity:0.8; }
-
-@media (min-width: 500px) {
-    div.video-block {
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+<body class="contents">
+<div id="content">
+<a href="01-B001-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="1">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B001-B2 L01-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L01-1</div>
+<div class="contents-subtitle">Excuse Me. How Do You Get to Shida?</div>
+</div>
+</div>
+</a>
+<a href="02-B002-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="2">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B002-B2 L01-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L01-2</div>
+<div class="contents-subtitle">Excuse Me. How Do You Get to Shida?</div>
+</div>
+</div>
+</a>
+<a href="03-B003-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="3">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B003-B2 L02-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L02-1</div>
+<div class="contents-subtitle">Take the MRT Instead!</div>
+</div>
+</div>
+</a>
+<a href="04-B004-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="4">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B004-B2 L02-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L02-2</div>
+<div class="contents-subtitle">Take the MRT Instead!</div>
+</div>
+</div>
+</a>
+<a href="05-B005-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="5">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B005-B2 L03-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">B2 L03-01</div>
+<div class="contents-subtitle">Your Chinese Has Improved!</div>
+</div>
+</div>
+</a>
+<a href="06-B006-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="6">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B006-B2 L03-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L03-2</div>
+<div class="contents-subtitle">Your Chinese Has Improved!</div>
+</div>
+</div>
+</a>
+<a href="07-B007-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="7">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B007-B2 L04-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L04-01</div>
+<div class="contents-subtitle">Work Part-time. I Teach French.</div>
+</div>
+</div>
+</a>
+<a href="08-B008-001" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="8">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B008-B2 L04-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L04-2</div>
+<div class="contents-subtitle">Work Part-time. I Teach French.</div>
+</div>
+</div>
+</a>
+<a href="09-B009-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="9">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B009-B2 L05-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L05-1</div>
+<div class="contents-subtitle">Attending a Wedding Reception</div>
+</div>
+</div>
+</a>
+<a href="10-B010-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="10">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B010-B2 L05-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L05-2</div>
+<div class="contents-subtitle">Attending a Wedding Reception</div>
+</div>
+</div>
+</a>
+<a href="11-B011-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="11">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B011-B2 L06-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L06-1</div>
+<div class="contents-subtitle">I Plan to Move Closer to School</div>
+</div>
+</div>
+</a>
+<a href="12-B012-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="12">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B012-B2 L06-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L06-2</div>
+<div class="contents-subtitle">I Plan to Move Closer to School</div>
+</div>
+</div>
+</a>
+<a href="13-B013-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="13">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B013-B2 L07-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L07-1</div>
+<div class="contents-subtitle">The Garbage Truck Is Here!</div>
+</div>
+</div>
+</a>
+<a href="14-B014-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="14">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B014-B2 L07-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L07-2</div>
+<div class="contents-subtitle">The Garbage Truck Is Here!</div>
+</div>
+</div>
+</a>
+<a href="15-B015-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="15">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B015-B2 L08-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L08-1</div>
+<div class="contents-subtitle">Learning Kungfu</div>
+</div>
+</div>
+</a>
+<a href="16-B016-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="16">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B016-B2 L08-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L08-2</div>
+<div class="contents-subtitle">Learning Kungfu</div>
+</div>
+</div>
+</a>
+<a href="17-B017-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="17">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B017-B2 L09-1.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L09-1</div>
+<div class="contents-subtitle">That City Is Really Beautiful</div>
+</div>
+</div>
+</a>
+<a href="18-B018-001.html" class="contents-link contents-link-ref" onclick="javascript:this.style.background='#EEEEEE';">
+<div class="contents-item-block" id="18">
+<div class="contents-image-block">
+<img class="contents-image" src="images/C01-B018-B2 L09-2.png"/>
+</div>
+<div class="contents-text-block">
+<div class="contents-title">L09-2</div>
+<div class="contents-subtitle">That City Is Really Beautiful</div>
+</div>
+</div>
+</a>
+</div>
+</body>
+</html>
