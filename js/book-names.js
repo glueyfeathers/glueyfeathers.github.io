@@ -1,4 +1,5 @@
 var books = [
+  { name: "Home", ref: "contents-menu-1.html" },
   { name: "B2 L01-1", ref: "01-B001-001.html" },
   { name: "B2 L01-2", ref: "02-B002-001.html" },
   { name: "B2 L02-1", ref: "03-B003-001.html" },
