@@ -1195,6 +1195,18 @@ body {
     background-color: #DDDDDD;
     cursor: pointer;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .icon-launch { height: 40px; width: 28px; margin-left: 2px; margin-right: 2px; }
 .float-left { float: left; overflow:hidden; }
 .float-right { float: right; overflow:hidden; }
