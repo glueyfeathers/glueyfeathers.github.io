@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B3 L01-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 1.11 },
+    { label: "b", start: 1.36, end: 2.07 },
+    { label: "c", start: 2.32, end: 2.97 },
+    { label: "d", start: 3.22, end: 6.21 },
+    { label: "e", start: 6.46, end: 7.19 },
+    { label: "f", start: 7.44, end: 8.15 },
+    { label: "g", start: 8.4, end: 9.73 },
+    { label: "h", start: 9.98, end: 11.13 },
+    { label: "i", start: 11.38, end: 12.85 },
+    { label: "j", start: 13.1, end: 15.33 },
+    { label: "k", start: 15.58, end: 16.57 },
+    { label: "l", start: 16.82, end: 18.11 },
+    { label: "m", start: 18.36, end: 19.45 },
+    { label: "n", start: 19.7, end: 23.31 },
+    { label: "o", start: 23.56, end: 24.67 },
+    { label: "p", start: 24.92, end: 27.53 },
+    { label: "q", start: 27.78, end: 29.49 },
+    { label: "r", start: 29.74, end: 30.73 },
+    { label: "s", start: 30.98, end: 33.11 },
+    { label: "t", start: 33.36, end: 35.31 },
+    { label: "u", start: 35.56, end: 38.33 },
+    { label: "v", start: 38.58, end: 39.89 },
+    { label: "w", start: 40.14, end: 41.25 },
+    { label: "x", start: 41.5, end: 42.75 },
+    { label: "y", start: 43, end: 44.33 },
+    { label: "z", start: 44.58, end: 46.11 },
+    { label: "aa", start: 46.36, end: 50.03 },
+    { label: "ab", start: 50.28, end: 52.07 },
+    { label: "ac", start: 52.32, end: 53.41 },
+    { label: "ad", start: 53.66, end: 56.47 },
+    { label: "ae", start: 56.72, end: 58.49 },
+    { label: "af", start: 58.74, end: 59.95 },
+    { label: "ag", start: 60.2, end: 61.55 },
+    { label: "ah", start: 61.8, end: 64.27 },
+    { label: "ai", start: 64.52, end: 66.71 },
+    { label: "aj", start: 66.96, end: 68.95 },
+    { label: "ak", start: 69.2, end: 72.35 },
+    { label: "al", start: 72.6, end: 73.67 },
+    { label: "am", start: 73.92, end: 78.31 },
+    { label: "an", start: 78.56, end: 79.07 },
+    { label: "ao", start: 79.32, end: 83.75 },
+    { label: "ap", start: 84, end: 87.11 },
+    { label: "aq", start: 87.36, end: 88.47 },
+    { label: "ar", start: 88.72, end: 90.35 },
+    { label: "as", start: 90.6, end: 91.87 },
+    { label: "at", start: 92.12, end: 94.19 },
+    { label: "au", start: 94.44, end: 95.55 },
+    { label: "av", start: 95.8, end: 97.91 },
+    { label: "aw", start: 98.16, end: 100.71 },
+    { label: "ax", start: 100.96, end: 102.95 },
+    { label: "ay", start: 103.2, end: 104.03 },
+    { label: "az", start: 104.28, end: 106.79 },
+    { label: "ba", start: 107.04, end: 108.39 },
+    { label: "bb", start: 108.64, end: 110.19 },
+    { label: "bc", start: 110.44, end: 112.63 },
+    { label: "bd", start: 112.88, end: 115.47 },
+    { label: "be", start: 115.72, end: 119.55 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "31-B031-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='30-B030-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B3 L01-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='32-B032-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">羅珊蒂，</div><div id="Tb" class="txs">下課啦!</div><div id="Tc" class="txs">怎麼林？</div><div id="Td" class="txs">你們班上有我們上個學期的同學嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Te" class="txs">沒有有，</div><div id="Tf" class="txs">都沒有。</div><div id="Tg" class="txs">你們班怎麼樣？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">都是新生，</div><div id="Ti" class="txs">我一個也不認識，</div><div id="Tj" class="txs">而且只有我一個男的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tk" class="txs">老師呢？</div><div id="Tl" class="txs">老師怎麼樣？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tm" class="txs">老師很嚴。</div><div id="Tn" class="txs">他說我們這學期除了每一課的口試、</div><div id="To" class="txs">筆試以外，</div><div id="Tp" class="txs">還要做兩次口頭報告。</div><div id="Tq" class="txs">我覺得壓力好大。</div><div id="Tr" class="txs">你們班呢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">老師的說明很清楚，</div><div id="Tt" class="txs">同學也很熱情。</div><div id="Tu" class="txs">我們今天就一起去吃中飯了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tv" class="txs">聽起來不錯。</div><div id="Tw" class="txs">還有位子嗎？</div><div id="Tx" class="txs">有位子的話，</div><div id="Ty" class="txs">我想去旁聽。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tz" class="txs">你想換班啊？</div><div id="Taa" class="txs">你不是打算在台灣上大學嗎？</div><div id="Tab" class="txs">老師嚴才學得快，</div><div id="Tac" class="txs">學得好啊。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tad" class="txs">可是我是獎學金學生。</div><div id="Tae" class="txs">要是成績不到80分，</div><div id="Taf" class="txs">拿不到獎學金，</div><div id="Tag" class="txs">就得回國了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tah" class="txs">我真羨慕你有獎學金。</div><div id="Tai" class="txs">不像我休學來台灣，</div><div id="Taj" class="txs">花的都是父母的錢，</div><div id="Tak" class="txs">一定得用功念書才行。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tal" class="txs">何雅婷，</div><div id="Tam" class="txs">聽說妳轉系了？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tan" class="txs">是啊，</div><div id="Tao" class="txs">這個學期我轉到國際關係系去了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tap" class="txs">妳原來念的會計系不是很熱門嗎？</div><div id="Taq" class="txs">怎麼不念了？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tar" class="txs">我念不下去了。</div><div id="Tas" class="txs">我每天堵夜念書，</div><div id="Tat" class="txs">可是還是差一點被當。</div><div id="Tau" class="txs">這樣下去，</div><div id="Tav" class="txs">四年恐怕沒辦法畢業。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taw" class="txs">念國際關係很適合妳。</div><div id="Tax" class="txs">妳的英文那麼流利，</div><div id="Tay" class="txs">口才又好，</div><div id="Taz" class="txs">以後可以當外交人員。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tba" class="txs">謝謝妳這麼說。</div><div id="Tbb" class="txs">我真想多跟你們聊聊。</div><div id="Tbc" class="txs">可惜我得走了，</div><div id="Tbd" class="txs">我跟教授約好了討論選課的事，</div><div id="Tbe" class="txs">不能遲到。再見。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B3 L01-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

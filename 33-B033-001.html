@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B3 L02-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.21 },
+    { label: "b", start: 2.46, end: 5.39 },
+    { label: "c", start: 5.64, end: 8.05 },
+    { label: "d", start: 8.3, end: 10.71 },
+    { label: "e", start: 10.96, end: 12.11 },
+    { label: "f", start: 12.36, end: 16.81 },
+    { label: "g", start: 17.06, end: 20.49 },
+    { label: "h", start: 20.74, end: 22.45 },
+    { label: "i", start: 22.7, end: 24.73 },
+    { label: "j", start: 24.98, end: 25.93 },
+    { label: "k", start: 26.18, end: 28.43 },
+    { label: "l", start: 28.68, end: 33.89 },
+    { label: "m", start: 34.14, end: 35.33 },
+    { label: "n", start: 35.58, end: 37.39 },
+    { label: "o", start: 37.64, end: 39.27 },
+    { label: "p", start: 39.52, end: 40.85 },
+    { label: "q", start: 41.1, end: 44.11 },
+    { label: "r", start: 44.36, end: 47.21 },
+    { label: "s", start: 47.46, end: 51.89 },
+    { label: "t", start: 52.14, end: 53.51 },
+    { label: "u", start: 53.76, end: 56.61 },
+    { label: "v", start: 56.86, end: 57.59 },
+    { label: "w", start: 57.84, end: 59.39 },
+    { label: "x", start: 59.64, end: 60.99 },
+    { label: "y", start: 61.24, end: 62.83 },
+    { label: "z", start: 63.08, end: 64.59 },
+    { label: "aa", start: 64.84, end: 67.39 },
+    { label: "ab", start: 67.64, end: 68.59 },
+    { label: "ac", start: 68.84, end: 69.39 },
+    { label: "ad", start: 69.64, end: 70.73 },
+    { label: "ae", start: 70.98, end: 72.71 },
+    { label: "af", start: 72.96, end: 73.35 },
+    { label: "ag", start: 73.6, end: 74.35 },
+    { label: "ah", start: 74.6, end: 75.11 },
+    { label: "ai", start: 75.36, end: 78.13 },
+    { label: "aj", start: 78.38, end: 79.35 },
+    { label: "ak", start: 79.6, end: 81.07 },
+    { label: "al", start: 81.32, end: 82.15 },
+    { label: "am", start: 82.4, end: 84.67 },
+    { label: "an", start: 84.92, end: 86.27 },
+    { label: "ao", start: 86.52, end: 87.19 },
+    { label: "ap", start: 87.44, end: 89.03 },
+    { label: "aq", start: 89.28, end: 90.75 },
+    { label: "ar", start: 91, end: 91.85 },
+    { label: "as", start: 92.1, end: 92.89 },
+    { label: "at", start: 93.14, end: 93.83 },
+    { label: "au", start: 94.08, end: 95.39 },
+    { label: "av", start: 95.64, end: 97.79 },
+    { label: "aw", start: 98.04, end: 99.39 },
+    { label: "ax", start: 99.64, end: 101.77 },
+    { label: "ay", start: 102.02, end: 103.53 },
+    { label: "az", start: 103.78, end: 105.83 },
+    { label: "ba", start: 106.08, end: 109.77 },
+    { label: "bb", start: 110.02, end: 112.87 },
+    { label: "bc", start: 113.12, end: 113.69 },
+    { label: "bd", start: 113.94, end: 116.07 },
+    { label: "be", start: 116.32, end: 121.63 },
+    { label: "bf", start: 121.88, end: 124.39 },
+    { label: "bg", start: 124.64, end: 125.73 },
+    { label: "bh", start: 125.98, end: 127.49 },
+    { label: "bi", start: 127.74, end: 130.23 },
+    { label: "bj", start: 130.48, end: 131.63 },
+    { label: "bk", start: 131.88, end: 133.71 },
+    { label: "bl", start: 133.96, end: 136.91 },
+    { label: "bm", start: 137.16, end: 139.37 },
+    { label: "bn", start: 139.62, end: 141.65 },
+    { label: "bo", start: 141.9, end: 143.73 },
+    { label: "bp", start: 143.98, end: 144.85 },
+    { label: "bq", start: 145.1, end: 147.57 },
+    { label: "br", start: 147.82, end: 148.51 },
+    { label: "bs", start: 148.76, end: 149.45 },
+    { label: "bt", start: 149.7, end: 150.47 },
+    { label: "bu", start: 150.72, end: 153.99 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "33-B033-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='32-B032-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B3 L02-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='34-B034-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">（在百貨公司裡）</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tb" class="txs">謝謝妳陪我來買外套。</div><div id="Tc" class="txs">沒想到今天人這麼多。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">現在百貨公司週年慶。</div><div id="Te" class="txs">一般來說，</div><div id="Tf" class="txs">週年慶的時候大部分的商品都會有不錯的折扣。</div><div id="Tg" class="txs">很多人趁這時候來買需要的東西，</div><div id="Th" class="txs">可以省不少錢。</div><div id="Ti" class="txs">這個牌子品質不錯，</div><div id="Tj" class="txs">選擇也多，</div><div id="Tk" class="txs">我們進去看看吧。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tl" class="txs">（何雅婷指著一件衣服要羅珊蒂看）</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tm" class="txs">妳看，</div><div id="Tn" class="txs">這件黃色的樣子不錯，</div><div id="To" class="txs">措起來也很舒服。</div><div id="Tp" class="txs">妳覺得怎麼樣？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tq" class="txs">我比較喜歡那件咖啡色的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tr" class="txs">妳還是兩件都拿去試穿吧。</div><div id="Ts" class="txs">有時候得穿上才知道好看不好看。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tt" class="txs">小姐，</div><div id="Tu" class="txs">這件外套妳穿起來真漂亮。</div><div id="Tv" class="txs">大小、</div><div id="Tw" class="txs">長短都很合適，</div><div id="Tx" class="txs">顏色也好看，</div><div id="Ty" class="txs">而且是羊毛的，</div><div id="Tz" class="txs">又輕又暖和。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taa" class="txs">這件打完折多少錢？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">原價3，</div><div id="Tac" class="txs">900，</div><div id="Tad" class="txs">現在九折，</div><div id="Tae" class="txs">打完折3，</div><div id="Taf" class="txs">510，</div><div id="Tag" class="txs">算妳3，</div><div id="Tah" class="txs">500。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tai" class="txs">廣告上不是寫八折嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taj" class="txs">不好意思，</div><div id="Tak" class="txs">是八折起。</div><div id="Tal" class="txs">那件八折，</div><div id="Tam" class="txs">可是這件打九折。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tan" class="txs">羊毛外套3，</div><div id="Tao" class="txs">500，</div><div id="Tap" class="txs">雖然不便宜，</div><div id="Taq" class="txs">可是品質不錯，</div><div id="Tar" class="txs">樣子也好，</div><div id="Tas" class="txs">值得買。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tat" class="txs">好吧。</div><div id="Tau" class="txs">我就買這件。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tav" class="txs">刷卡還是付現金？</div><div id="Taw" class="txs">今天刷 Visa 卡，</div><div id="Tax" class="txs">可以再打九五折。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tay" class="txs">那就刷卡。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taz" class="txs">請等我一下。（</div><div id="Tba" class="txs">拿著簽單跟發飄回來）</div><div id="Tbb" class="txs">麻煩妳在這裡簽名。</div><div id="Tbc" class="txs">謝謝。</div><div id="Tbd" class="txs">歡迎下次再來。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbe" class="txs">（羅珊蒂隔天回百貨公司要求退換）</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbf" class="txs">我昨天買的這件外套，</div><div id="Tbg" class="txs">裡面破了一個洞。</div><div id="Tbh" class="txs">我要換一件新的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbi" class="txs">請問妳帶發飄來了嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbj" class="txs">我弄丟了，</div><div id="Tbk" class="txs">找不到。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbl" class="txs">按照我們公司的規定，</div><div id="Tbm" class="txs">沒有發票不能退還。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbn" class="txs">我昨天是刷卡買的，</div><div id="Tbo" class="txs">你們應該查得到資料。</div><div id="Tbp" class="txs">再說，</div><div id="Tbq" class="txs">衣服有問題也不是我的錯。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbr" class="txs">對不起，</div><div id="Tbs" class="txs">對不起。</div><div id="Tbt" class="txs">請等一下，</div><div id="Tbu" class="txs">我去問問店長。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B3 L02-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

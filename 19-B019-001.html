@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L10-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 0.87 },
+    { label: "b", start: 1.12, end: 1.51 },
+    { label: "c", start: 1.76, end: 2.67 },
+    { label: "d", start: 2.92, end: 3.93 },
+    { label: "e", start: 4.18, end: 4.79 },
+    { label: "f", start: 5.04, end: 6.27 },
+    { label: "g", start: 6.52, end: 9.39 },
+    { label: "h", start: 9.64, end: 12.15 },
+    { label: "i", start: 12.4, end: 13.41 },
+    { label: "j", start: 13.66, end: 16.27 },
+    { label: "k", start: 16.52, end: 19.47 },
+    { label: "l", start: 19.72, end: 20.43 },
+    { label: "m", start: 20.68, end: 21.43 },
+    { label: "n", start: 21.68, end: 23.75 },
+    { label: "o", start: 24, end: 28.01 },
+    { label: "p", start: 28.26, end: 28.93 },
+    { label: "q", start: 29.18, end: 31.65 },
+    { label: "r", start: 31.9, end: 35.71 },
+    { label: "s", start: 35.96, end: 36.97 },
+    { label: "t", start: 37.22, end: 41.57 },
+    { label: "u", start: 41.82, end: 42.73 },
+    { label: "v", start: 42.98, end: 45.25 },
+    { label: "w", start: 45.5, end: 48.75 },
+    { label: "x", start: 49, end: 51.35 },
+    { label: "y", start: 51.6, end: 53.63 },
+    { label: "z", start: 53.88, end: 56.31 },
+    { label: "aa", start: 56.56, end: 57.99 },
+    { label: "ab", start: 58.24, end: 61.37 },
+    { label: "ac", start: 61.62, end: 62.79 },
+    { label: "ad", start: 63.04, end: 63.93 },
+    { label: "ae", start: 64.18, end: 65.31 },
+    { label: "af", start: 65.56, end: 69.45 },
+    { label: "ag", start: 69.7, end: 70.99 },
+    { label: "ah", start: 71.24, end: 72.67 },
+    { label: "ai", start: 72.92, end: 75.45 },
+    { label: "aj", start: 75.7, end: 77.35 },
+    { label: "ak", start: 77.6, end: 78.49 },
+    { label: "al", start: 78.74, end: 81.19 },
+    { label: "am", start: 81.44, end: 82.53 },
+    { label: "an", start: 82.78, end: 85.63 },
+    { label: "ao", start: 85.88, end: 87.33 },
+    { label: "ap", start: 87.58, end: 89.91 },
+    { label: "aq", start: 90.16, end: 91.09 },
+    { label: "ar", start: 91.34, end: 93.89 },
+    { label: "as", start: 94.14, end: 98.43 },
+    { label: "at", start: 98.68, end: 100.19 },
+    { label: "au", start: 100.44, end: 102.85 },
+    { label: "av", start: 103.1, end: 104.09 },
+    { label: "aw", start: 104.34, end: 106.35 },
+    { label: "ax", start: 106.6, end: 107.47 },
+    { label: "ay", start: 107.72, end: 110.51 },
+    { label: "az", start: 110.76, end: 112.29 },
+    { label: "ba", start: 112.54, end: 115.45 },
+    { label: "bb", start: 115.7, end: 117.19 },
+    { label: "bc", start: 117.44, end: 119.43 },
+    { label: "bd", start: 119.68, end: 123.05 },
+    { label: "be", start: 123.3, end: 124.21 },
+    { label: "bf", start: 124.46, end: 126.05 },
+    { label: "bg", start: 126.3, end: 128.59 },
+    { label: "bh", start: 128.84, end: 129.73 },
+    { label: "bi", start: 129.98, end: 135.07 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "19-B019-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='18-B018-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L10-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='20-B020-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">歡迎，</div><div id="Tb" class="txs">歡迎，</div><div id="Tc" class="txs">大家請進，</div><div id="Td" class="txs">不要脫鞋。</div><div id="Te" class="txs">月美，</div><div id="Tf" class="txs">麻煩妳關門。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tg" class="txs">謝謝老師請我們來包餃子，</div><div id="Th" class="txs">我也帶了我們越南的春捲。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ti" class="txs">張老師，</div><div id="Tj" class="txs">這是我做的韓國泡菜。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tk" class="txs">看不出來你還會做泡菜！</div><div id="Tl" class="txs">馬丁、</div><div id="Tm" class="txs">高美玲，</div><div id="Tn" class="txs">你們也帶東西來了啊？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="To" class="txs">我們剛剛去超市買了水果跟飲料。</div><div id="Tp" class="txs">老師，</div><div id="Tq" class="txs">你們家的飯廳真大。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tr" class="txs">老師家的飯廳應該坐得下十個人吧？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">坐得下，</div><div id="Tt" class="txs">所以請你們幾個人一起來吃飯沒問題。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tu" class="txs">老師，</div><div id="Tv" class="txs">我們要幫忙準備什麼？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tw" class="txs">我把包餃子的東西都準備好了，</div><div id="Tx" class="txs">你們去把手洗一洗，</div><div id="Ty" class="txs">我們就開始包吧！</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tz" class="txs">這是我第一次包餃子，</div><div id="Taa" class="txs">你們包過嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">我跟馬丁以前上過做菜的課，</div><div id="Tac" class="txs">包過水餃，</div><div id="Tad" class="txs">對不對？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tae" class="txs">包過，</div><div id="Taf" class="txs">可是我包的水餃一煮就壞了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tag" class="txs">不是壞了，</div><div id="Tah" class="txs">是煮破了。</div><div id="Tai" class="txs">如果你們沒把餃子包好，</div><div id="Taj" class="txs">一煮就破了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tak" class="txs">老師，</div><div id="Tal" class="txs">您看我這麼包，對嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tam" class="txs">很好，</div><div id="Tan" class="txs">不過你還可以多放一點餡兒，</div><div id="Tao" class="txs">如果扁遍的，</div><div id="Tap" class="txs">看起來就不像餃子了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taq" class="txs">老師，</div><div id="Tar" class="txs">我們五個人要包多少餃子？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tas" class="txs">我準備的材料大概可以包一百多個，</div><div id="Tat" class="txs">再做幾道菜，</div><div id="Tau" class="txs">還有一大碗酸辣湯，</div><div id="Tav" class="txs">應該夠了。</div><div id="Taw" class="txs">大家一定都吃得飽。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tax" class="txs">馬丁，</div><div id="Tay" class="txs">你來以前不是一直說餓嗎？</div><div id="Taz" class="txs">你能吃幾個餃子？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tba" class="txs">我想我吃得下二十個，</div><div id="Tbb" class="txs">要是妳吃不完，</div><div id="Tbc" class="txs">我可以幫妳吃。</div><div id="Tbd" class="txs">大家最好能把餃子都吃光。</div><div id="Tbe" class="txs">你們包，</div><div id="Tbf" class="txs">我去把鍋子洗了，</div><div id="Tbg" class="txs">就要準備煮餃子了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbh" class="txs">老師，</div><div id="Tbi" class="txs">我幫您把和鎮子和碗放在桌上。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B2 L10-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

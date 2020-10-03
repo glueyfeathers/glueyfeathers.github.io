@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L12-2 2</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 1.01 },
+    { label: "b", start: 1.26, end: 7.09 },
+    { label: "c", start: 7.34, end: 10.01 },
+    { label: "d", start: 10.26, end: 16.05 },
+    { label: "e", start: 16.3, end: 20.91 },
+    { label: "f", start: 21.16, end: 24.65 },
+    { label: "g", start: 24.9, end: 25.95 },
+    { label: "h", start: 26.2, end: 30.31 },
+    { label: "i", start: 30.56, end: 34.93 },
+    { label: "j", start: 35.18, end: 38.75 },
+    { label: "k", start: 39, end: 42.91 },
+    { label: "l", start: 43.16, end: 44.55 },
+    { label: "m", start: 44.8, end: 46.17 },
+    { label: "n", start: 46.42, end: 49.13 },
+    { label: "o", start: 49.38, end: 51.17 },
+    { label: "p", start: 51.42, end: 53.69 },
+    { label: "q", start: 53.94, end: 55.19 },
+    { label: "r", start: 55.44, end: 58.33 },
+    { label: "s", start: 58.58, end: 60.79 },
+    { label: "t", start: 61.04, end: 62.41 },
+    { label: "u", start: 62.66, end: 64.11 },
+    { label: "v", start: 64.36, end: 68.43 },
+    { label: "w", start: 68.68, end: 72.11 },
+    { label: "x", start: 72.36, end: 76.29 },
+    { label: "y", start: 76.54, end: 77.75 },
+    { label: "z", start: 78, end: 82.91 },
+    { label: "aa", start: 83.16, end: 86.99 },
+    { label: "ab", start: 87.24, end: 93.35 },
+    { label: "ac", start: 93.6, end: 95.67 },
+    { label: "ad", start: 95.92, end: 98.39 },
+    { label: "ae", start: 98.64, end: 100.23 },
+    { label: "af", start: 100.48, end: 104.67 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [];
+var hasIntro = false;
+var baseRef  = "24-B024-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='23-B023-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L12-2&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='25-B025-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B2 L12-2.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

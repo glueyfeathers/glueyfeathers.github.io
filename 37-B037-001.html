@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B3 L04-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.27 },
+    { label: "b", start: 2.52, end: 5.51 },
+    { label: "c", start: 5.76, end: 6.79 },
+    { label: "d", start: 7.04, end: 7.95 },
+    { label: "e", start: 8.2, end: 9.91 },
+    { label: "f", start: 10.16, end: 12.15 },
+    { label: "g", start: 12.4, end: 15.43 },
+    { label: "h", start: 15.68, end: 16.67 },
+    { label: "i", start: 16.92, end: 19.35 },
+    { label: "j", start: 19.6, end: 22.95 },
+    { label: "k", start: 23.2, end: 26.31 },
+    { label: "l", start: 26.56, end: 27.85 },
+    { label: "m", start: 28.1, end: 31.41 },
+    { label: "n", start: 31.66, end: 32.59 },
+    { label: "o", start: 32.84, end: 34.71 },
+    { label: "p", start: 34.96, end: 36.75 },
+    { label: "q", start: 37, end: 39.79 },
+    { label: "r", start: 40.04, end: 41.59 },
+    { label: "s", start: 41.84, end: 43.81 },
+    { label: "t", start: 44.06, end: 44.47 },
+    { label: "u", start: 44.72, end: 44.79 },
+    { label: "v", start: 45.04, end: 45.45 },
+    { label: "w", start: 45.7, end: 47.73 },
+    { label: "x", start: 47.98, end: 48.77 },
+    { label: "y", start: 49.02, end: 50.77 },
+    { label: "z", start: 51.02, end: 52.93 },
+    { label: "aa", start: 53.18, end: 57.25 },
+    { label: "ab", start: 57.5, end: 60.49 },
+    { label: "ac", start: 60.74, end: 64.45 },
+    { label: "ad", start: 64.7, end: 67.31 },
+    { label: "ae", start: 67.56, end: 69.59 },
+    { label: "af", start: 69.84, end: 71.03 },
+    { label: "ag", start: 71.28, end: 74.35 },
+    { label: "ah", start: 74.6, end: 76.57 },
+    { label: "ai", start: 76.82, end: 77.81 },
+    { label: "aj", start: 78.06, end: 79.99 },
+    { label: "ak", start: 80.24, end: 83.19 },
+    { label: "al", start: 83.44, end: 87.79 },
+    { label: "am", start: 88.04, end: 91.91 },
+    { label: "an", start: 92.16, end: 95.91 },
+    { label: "ao", start: 96.16, end: 97.45 },
+    { label: "ap", start: 97.7, end: 98.77 },
+    { label: "aq", start: 99.02, end: 99.97 },
+    { label: "ar", start: 100.22, end: 101.19 },
+    { label: "as", start: 101.44, end: 102.95 },
+    { label: "at", start: 103.2, end: 105.85 },
+    { label: "au", start: 106.1, end: 107.35 },
+    { label: "av", start: 107.6, end: 111.69 },
+    { label: "aw", start: 111.94, end: 114.53 },
+    { label: "ax", start: 114.78, end: 116.03 },
+    { label: "ay", start: 116.28, end: 118.73 },
+    { label: "az", start: 118.98, end: 122.99 },
+    { label: "ba", start: 123.24, end: 125.63 },
+    { label: "bb", start: 125.88, end: 127.11 },
+    { label: "bc", start: 127.36, end: 128.95 },
+    { label: "bd", start: 129.2, end: 129.85 },
+    { label: "be", start: 130.1, end: 131.25 },
+    { label: "bf", start: 131.5, end: 132.65 },
+    { label: "bg", start: 132.9, end: 136.55 },
+    { label: "bh", start: 136.8, end: 140.23 },
+    { label: "bi", start: 140.48, end: 143.19 },
+    { label: "bj", start: 143.44, end: 144.39 },
+    { label: "bk", start: 144.64, end: 147.77 },
+    { label: "bl", start: 148.02, end: 150.07 },
+    { label: "bm", start: 150.32, end: 152.49 },
+    { label: "bn", start: 152.74, end: 154.45 },
+    { label: "bo", start: 154.7, end: 157.05 },
+    { label: "bp", start: 157.3, end: 159.07 },
+    { label: "bq", start: 159.32, end: 160.39 },
+    { label: "br", start: 160.64, end: 164.41 },
+    { label: "bs", start: 164.66, end: 167.71 },
+    { label: "bt", start: 167.96, end: 169.39 },
+    { label: "bu", start: 169.64, end: 171.55 },
+    { label: "bv", start: 171.8, end: 174.95 },
+    { label: "bw", start: 175.2, end: 176.39 },
+    { label: "bx", start: 176.64, end: 177.79 },
+    { label: "by", start: 178.04, end: 179.51 },
+    { label: "bz", start: 179.76, end: 184.15 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "37-B037-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='36-B036-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B3 L04-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='38-B038-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">(在活動中心)</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tb" class="txs">你們昨天去校外教學，</div><div id="Tc" class="txs">玩得怎麼樣？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">很不錯。</div><div id="Te" class="txs">我們去了很多地方。</div><div id="Tf" class="txs">我最喜歡平溪老街，</div><div id="Tg" class="txs">那裡的氣氛讓我想起了家鄉。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Th" class="txs">平溪，</div><div id="Ti" class="txs">我元宵節的時候剛去過。</div><div id="Tj" class="txs">我語言交換的朋友帶我去放天燈。</div><div id="Tk" class="txs">他告訴我把願望寫在天燈上，</div><div id="Tl" class="txs">就可以實現。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tm" class="txs">聽說那天放天燈的人特別多。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tn" class="txs">是啊，</div><div id="To" class="txs">後來我找不到我朋友，</div><div id="Tp" class="txs">手機又收不到訊號，</div><div id="Tq" class="txs">還好碰到一位熱心的小姐，</div><div id="Tr" class="txs">她不但帶我回車站，</div><div id="Ts" class="txs">還請我吃了一碗元宵。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tt" class="txs">對、</div><div id="Tu" class="txs">對、</div><div id="Tv" class="txs">對，</div><div id="Tw" class="txs">台灣人真有人情味。</div><div id="Tx" class="txs">有一次，</div><div id="Ty" class="txs">我去參觀台南孔廟，</div><div id="Tz" class="txs">正在研究牆上的字，</div><div id="Taa" class="txs">有有一位老先生過來很有耐心地給我解釋。</div><div id="Tab" class="txs">這件事情讓我非常感動。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tac" class="txs">我聽說台南有很多有特色的老店，</div><div id="Tad" class="txs">夜市的小吃也很有名。</div><div id="Tae" class="txs">你吃了擔仔麵嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taf" class="txs">當然吃了。</div><div id="Tag" class="txs">我朋友帶我去吃了好幾樣小吃。</div><div id="Tah" class="txs">那些店都在巷子裡，</div><div id="Tai" class="txs">沒有招牌，</div><div id="Taj" class="txs">只有當地人才知道，</div><div id="Tak" class="txs">可是東西都好吃得不得了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tal" class="txs">台北的巷子裡也有很多有特色的商店。</div><div id="Tam" class="txs">像我們學校附近的巷子裡有一家茶館，</div><div id="Tan" class="txs">你一進去老闆就拿好茶招待你，</div><div id="Tao" class="txs">跟你談茶、</div><div id="Tap" class="txs">談生活。</div><div id="Taq" class="txs">老闆說，</div><div id="Tar" class="txs">他開茶館，</div><div id="Tas" class="txs">不是為了賺錢，</div><div id="Tat" class="txs">而是為了讓大家認識茶文化，</div><div id="Tau" class="txs">也交朋友。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tav" class="txs">台灣有特色的商店很多都不在大街上；</div><div id="Taw" class="txs">你得走進巷子才找得到。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tax" class="txs">為什麼？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tay" class="txs">因為台北的房租太貴了，</div><div id="Taz" class="txs">一些有理想的人只好把店開在巷子裡。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tba" class="txs">敏萱剛剛說的那家茶館，</div><div id="Tbb" class="txs">我很有興趣。</div><div id="Tbc" class="txs">改天我們一起去，</div><div id="Tbd" class="txs">怎麼樣？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbe" class="txs">茶館，</div><div id="Tbf" class="txs">太無聊了吧。</div><div id="Tbg" class="txs">我還是比較喜歡去熱辣的東區，</div><div id="Tbh" class="txs">尤其是台北101新年放煙火的時候，</div><div id="Tbi" class="txs">跟幾十萬人一起看煙火、</div><div id="Tbj" class="txs">跨年，</div><div id="Tbk" class="txs">以前我從來沒有過這樣的經驗。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbl" class="txs">我最喜歡逛夜市。</div><div id="Tbm" class="txs">那裡的東西種類又多，</div><div id="Tbn" class="txs">價錢又便宜。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbo" class="txs">我也喜歡夜市的熱導，</div><div id="Tbp" class="txs">讓我有過節的感覺。</div><div id="Tbq" class="txs">在我家鄉，</div><div id="Tbr" class="txs">只有過年過節的時候才看得到這麼多人。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbs" class="txs">我到夜市一定先找吃的，</div><div id="Tbt" class="txs">像自豆腐、</div><div id="Tbu" class="txs">水煎包這些都不錯，</div><div id="Tbv" class="txs">不過我最愛的還是炸雞排。</div><div id="Tbw" class="txs">一口雞排，</div><div id="Tbx" class="txs">一口冰紅茶，</div><div id="Tby" class="txs">真是開心極了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbz" class="txs">我們這個週末就一起去吧！</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B3 L04-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

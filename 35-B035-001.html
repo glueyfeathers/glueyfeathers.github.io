@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B3 L03-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.61 },
+    { label: "b", start: 2.86, end: 5.39 },
+    { label: "c", start: 5.64, end: 7.53 },
+    { label: "d", start: 7.78, end: 8.65 },
+    { label: "e", start: 8.9, end: 9.77 },
+    { label: "f", start: 10.02, end: 12.17 },
+    { label: "g", start: 12.42, end: 14.37 },
+    { label: "h", start: 14.62, end: 16.75 },
+    { label: "i", start: 17, end: 18.21 },
+    { label: "j", start: 18.46, end: 19.59 },
+    { label: "k", start: 19.84, end: 22.11 },
+    { label: "l", start: 22.36, end: 25.35 },
+    { label: "m", start: 25.6, end: 27.29 },
+    { label: "n", start: 27.54, end: 28.55 },
+    { label: "o", start: 28.8, end: 31.29 },
+    { label: "p", start: 31.54, end: 33.23 },
+    { label: "q", start: 33.48, end: 35.31 },
+    { label: "r", start: 35.56, end: 37.99 },
+    { label: "s", start: 38.24, end: 40.27 },
+    { label: "t", start: 40.52, end: 42.85 },
+    { label: "u", start: 43.1, end: 47.07 },
+    { label: "v", start: 47.32, end: 50.75 },
+    { label: "w", start: 51, end: 52.85 },
+    { label: "x", start: 53.1, end: 54.39 },
+    { label: "y", start: 54.64, end: 56.93 },
+    { label: "z", start: 57.18, end: 59.63 },
+    { label: "aa", start: 59.88, end: 63.63 },
+    { label: "ab", start: 63.88, end: 65.71 },
+    { label: "ac", start: 65.96, end: 67.31 },
+    { label: "ad", start: 67.56, end: 68.91 },
+    { label: "ae", start: 69.16, end: 70.71 },
+    { label: "af", start: 70.96, end: 71.71 },
+    { label: "ag", start: 71.96, end: 73.31 },
+    { label: "ah", start: 73.56, end: 76.19 },
+    { label: "ai", start: 76.44, end: 79.01 },
+    { label: "aj", start: 79.26, end: 82.35 },
+    { label: "ak", start: 82.6, end: 86.11 },
+    { label: "al", start: 86.36, end: 87.59 },
+    { label: "am", start: 87.84, end: 90.83 },
+    { label: "an", start: 91.08, end: 95.23 },
+    { label: "ao", start: 95.48, end: 97.45 },
+    { label: "ap", start: 97.7, end: 99.61 },
+    { label: "aq", start: 99.86, end: 102.23 },
+    { label: "ar", start: 102.48, end: 104.19 },
+    { label: "as", start: 104.44, end: 107.31 },
+    { label: "at", start: 107.56, end: 109.95 },
+    { label: "au", start: 110.2, end: 112.09 },
+    { label: "av", start: 112.34, end: 114.09 },
+    { label: "aw", start: 114.34, end: 117.21 },
+    { label: "ax", start: 117.46, end: 119.43 },
+    { label: "ay", start: 119.68, end: 120.49 },
+    { label: "az", start: 120.74, end: 121.35 },
+    { label: "ba", start: 121.6, end: 123.01 },
+    { label: "bb", start: 123.26, end: 125.91 },
+    { label: "bc", start: 126.16, end: 128.23 },
+    { label: "bd", start: 128.48, end: 132.01 },
+    { label: "be", start: 132.26, end: 134.83 },
+    { label: "bf", start: 135.08, end: 136.23 },
+    { label: "bg", start: 136.48, end: 137.71 },
+    { label: "bh", start: 137.96, end: 139.15 },
+    { label: "bi", start: 139.4, end: 140.61 },
+    { label: "bj", start: 140.86, end: 142.71 },
+    { label: "bk", start: 142.96, end: 145.61 },
+    { label: "bl", start: 145.86, end: 148.17 },
+    { label: "bm", start: 148.42, end: 151.13 },
+    { label: "bn", start: 151.38, end: 156.55 },
+    { label: "bo", start: 156.8, end: 159.69 },
+    { label: "bp", start: 159.94, end: 163.27 },
+    { label: "bq", start: 163.52, end: 164.55 },
+    { label: "br", start: 164.8, end: 167.11 },
+    { label: "bs", start: 167.36, end: 168.99 },
+    { label: "bt", start: 169.24, end: 170.67 },
+    { label: "bu", start: 170.92, end: 173.37 },
+    { label: "bv", start: 173.62, end: 177.63 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "35-B035-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='34-B034-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B3 L03-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='36-B036-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="m"><div id="Ta" class="txs">（在火鍋店門口）</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tb" class="txs">妳怎麼現在才來？</div><div id="Tc" class="txs">我們等妳等半天了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Td" class="txs">對不起，</div><div id="Te" class="txs">我來晚了。</div><div id="Tf" class="txs">我走到半路下起雨來了，</div><div id="Tg" class="txs">只好又回去拿傘。</div><div id="Th" class="txs">台灣的天氣真奇怪，</div><div id="Ti" class="txs">說變就變。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tj" class="txs">就是啊。</div><div id="Tk" class="txs">昨天還出大太陽，</div><div id="Tl" class="txs">今天就又颱風又下雨。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tm" class="txs">台灣是個海島，</div><div id="Tn" class="txs">冬天的時候，</div><div id="To" class="txs">受到北方來的冷空氣的影響，</div><div id="Tp" class="txs">天氣很不穩定。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tq" class="txs">幸虧我買了外套，</div><div id="Tr" class="txs">要不然就只好躲在家裡了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Ts" class="txs">沒那麼嚴重吧，</div><div id="Tt" class="txs">今天還有18度。</div><div id="Tu" class="txs">這樣的溫度在共蘭只能算是夏天。</div><div id="Tv" class="txs">蔡蘭的冬天還常常到零下呢。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tw" class="txs">今天溫度是不低，</div><div id="Tx" class="txs">不過因為下兩，</div><div id="Ty" class="txs">感覺比實際溫度低得多，</div><div id="Tz" class="txs">難怪羅珊蒂受不了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Taa" class="txs">（他們走進火鍋店坐下）</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tab" class="txs">我餓死了，</div><div id="Tac" class="txs">我們趕快點菜吧。</div><div id="Tad" class="txs">天氣這麼冷，</div><div id="Tae" class="txs">吃牛肉最好。</div><div id="Taf" class="txs">你們呢？</div><div id="Tag" class="txs">想吃點什麼？</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tah" class="txs">我昨天剛吃過烤肉，</div><div id="Tai" class="txs">今天就點素菜鍋吧。</div><div id="Taj" class="txs">這個季節的大白菜最甜了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tak" class="txs">聽說這家火鍋店的海鮮很新鮮。</div><div id="Tal" class="txs">我要海鮮。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tam" class="txs">沒想到台灣的冬天這麼冷，</div><div id="Tan" class="txs">看起來我得讓我男朋友春天的時候再來。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tao" class="txs">春天真的很浪漫，</div><div id="Tap" class="txs">到處都看得到櫻花，</div><div id="Taq" class="txs">可是在台灣有句話說:「</div><div id="Tar" class="txs">春天後母臉」。</div><div id="Tas" class="txs">春天天氣變化比冬天更大，</div><div id="Tat" class="txs">早晚的氣溫也差很多。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tau" class="txs">高橋說的沒錯。</div><div id="Tav" class="txs">我朋友告訴我，</div><div id="Taw" class="txs">去年春天幾乎每天都下十，</div><div id="Tax" class="txs">衣服總是乾不了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tay" class="txs">是啊，</div><div id="Taz" class="txs">衣服、</div><div id="Tba" class="txs">鞋子都發霉了，</div><div id="Tbb" class="txs">所以我去年買了除濕機。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbc" class="txs">我們雖然也有兩季，</div><div id="Tbd" class="txs">可是下過雨以後晚上就涼快了。</div><div id="Tbe" class="txs">不像台北這麼潮濕。</div><div id="Tbf" class="txs">我六月來的時候，</div><div id="Tbg" class="txs">又閃又熱，</div><div id="Tbh" class="txs">又沒有冷氣，</div><div id="Tbi" class="txs">真受不了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbj" class="txs">我是八月來的。</div><div id="Tbk" class="txs">我一來就去海邊曬太陽，</div><div id="Tbl" class="txs">朋友都羨虹死了。</div><div id="Tbm" class="txs">本來打算六月底回國，</div><div id="Tbn" class="txs">但是因為台灣的夏天可以玩很多水上活動，</div><div id="Tbo" class="txs">而且吃得到很多熱帶水果，</div><div id="Tbp" class="txs">所以我決定晚一點再回去。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbq" class="txs">快吃吧。</div><div id="Tbr" class="txs">肉煮久了就不好吃了。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbs" class="txs">真的很好吃。</div><div id="Tbt" class="txs">我男朋友來的時候，</div><div id="Tbu" class="txs">我們一定要再來這裡聚一聚。</div></div>
+<div class="b">&nbsp;</div>
+<div class="m"><div id="Tbv" class="txs">那有什麼問題。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B3 L03-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>

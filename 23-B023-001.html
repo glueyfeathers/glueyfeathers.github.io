@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>B2 L12-1 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/rab-stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "a", start: 0, end: 2.07 },
+    { label: "b", start: 2.32, end: 3.63 },
+    { label: "c", start: 3.88, end: 6.07 },
+    { label: "d", start: 6.32, end: 7.27 },
+    { label: "e", start: 7.52, end: 9.69 },
+    { label: "f", start: 9.94, end: 15.15 },
+    { label: "g", start: 15.4, end: 16.73 },
+    { label: "h", start: 16.98, end: 18.39 },
+    { label: "i", start: 18.64, end: 19.15 },
+    { label: "j", start: 19.4, end: 21.31 },
+    { label: "k", start: 21.56, end: 22.91 },
+    { label: "l", start: 23.16, end: 25.71 },
+    { label: "m", start: 25.96, end: 28.79 },
+    { label: "n", start: 29.04, end: 32.65 },
+    { label: "o", start: 32.9, end: 33.31 },
+    { label: "p", start: 33.56, end: 36.03 },
+    { label: "q", start: 36.28, end: 39.25 },
+    { label: "r", start: 39.5, end: 40.83 },
+    { label: "s", start: 41.08, end: 41.77 },
+    { label: "t", start: 42.02, end: 43.15 },
+    { label: "u", start: 43.4, end: 44.15 },
+    { label: "v", start: 44.4, end: 45.09 },
+    { label: "w", start: 45.34, end: 47.33 },
+    { label: "x", start: 47.58, end: 48.67 },
+    { label: "y", start: 48.92, end: 50.17 },
+    { label: "z", start: 50.42, end: 53.21 },
+    { label: "aa", start: 53.46, end: 56.07 },
+    { label: "ab", start: 56.32, end: 57.73 },
+    { label: "ac", start: 57.98, end: 59.61 },
+    { label: "ad", start: 59.86, end: 62.89 },
+    { label: "ae", start: 63.14, end: 67.57 },
+    { label: "af", start: 67.82, end: 71.11 },
+    { label: "ag", start: 71.36, end: 74.27 },
+    { label: "ah", start: 74.52, end: 76.89 },
+    { label: "ai", start: 77.14, end: 79.75 },
+    { label: "aj", start: 80, end: 80.71 },
+    { label: "ak", start: 80.96, end: 84.15 },
+    { label: "al", start: 84.4, end: 87.19 },
+    { label: "am", start: 87.44, end: 92.63 },
+    { label: "an", start: 92.88, end: 95.93 },
+    { label: "ao", start: 96.18, end: 97.67 },
+    { label: "ap", start: 97.92, end: 99.33 },
+    { label: "aq", start: 99.58, end: 101.29 },
+    { label: "ar", start: 101.54, end: 102.23 },
+    { label: "as", start: 102.48, end: 104.89 },
+    { label: "at", start: 105.14, end: 105.93 },
+    { label: "au", start: 106.18, end: 106.89 },
+    { label: "av", start: 107.14, end: 107.91 },
+    { label: "aw", start: 108.16, end: 108.65 },
+    { label: "ax", start: 108.9, end: 109.91 },
+    { label: "ay", start: 110.16, end: 111.79 },
+    { label: "az", start: 112.04, end: 117.03 },
+    { label: "ba", start: 117.28, end: 119.37 },
+    { label: "bb", start: 119.62, end: 123.71 },
+    { label: "bc", start: 123.96, end: 126.45 },
+    { label: "bd", start: 126.7, end: 128.09 },
+    { label: "be", start: 128.34, end: 129.25 },
+    { label: "bf", start: 129.5, end: 130.95 },
+    { label: "bg", start: 131.2, end: 132.71 },
+    { label: "bh", start: 132.96, end: 135.99 },
+    { label: "bi", start: 136.24, end: 140.75 },
+    { label: "bj", start: 141, end: 142.01 },
+    { label: "bk", start: 142.26, end: 143.21 },
+    { label: "bl", start: 143.46, end: 145.05 },
+    { label: "bm", start: 145.3, end: 146.05 },
+    { label: "bn", start: 146.3, end: 148.35 },
+    { label: "bo", start: 148.6, end: 149.97 },
+    { label: "bp", start: 150.22, end: 156.31 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 1 }];
+var hasIntro = false;
+var baseRef  = "23-B023-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='22-B022-001.html' title='Previous Book'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='contents-menu-1.html' title='Home'>&nbsp;🏠&nbsp;</a></span>
+
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;B2 L12-1&nbsp;&nbsp;</a></span>
+
+
+  <span class="button"><a href='24-B024-001.html' title='Next Book'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="b"></div>
+<div class="b"></div>
+<div class="p_PlainText"><div id="Ta" class="txs">我正在等白如斑，</div><div id="Tb" class="txs">我們要去吃飯，</div><div id="Tc" class="txs">你想跟我們一起去嗎？</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Td" class="txs">好啊！</div><div id="Te" class="txs">妳們要去吃什麼？</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tf" class="txs">我們打算去學校對面一家新開的素食餐廳。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tg" class="txs">速食？</div><div id="Th" class="txs">學校對面有「</div><div id="Ti" class="txs">痠當勞」？</div><div id="Tj" class="txs">我怎麼沒注意到？</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tk" class="txs">你想錯了，</div><div id="Tl" class="txs">不是麥當勞那種速食店，</div><div id="Tm" class="txs">是不吃肉的素食餐廳。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tn" class="txs">新開的餐廳我都想去嚐一嚐，</div><div id="To" class="txs">好，</div><div id="Tp" class="txs">我跟妳們一起去。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tq" class="txs">(白如玉到了)</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tr" class="txs">欸！</div><div id="Ts" class="txs">馬丁，</div><div id="Tt" class="txs">好久不見！</div><div id="Tu" class="txs">月美，</div><div id="Tv" class="txs">對不起，</div><div id="Tw" class="txs">讓妳等了這麼久。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tx" class="txs">沒關係，</div><div id="Ty" class="txs">我也剛下課。</div><div id="Tz" class="txs">馬丁也跟我們去吃飯。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Taa" class="txs">(餐廳裡)</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tab" class="txs">馬丁，</div><div id="Tac" class="txs">你拿了這麼多菜，</div><div id="Tad" class="txs">我沒想到你也喜歡吃素。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tae" class="txs">我是到了台灣以後才覺得吃素不錯，</div><div id="Taf" class="txs">我以前吃漢堡的機會比較多。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tag" class="txs">漢堡吃多了對健康不好，</div><div id="Tah" class="txs">而且容易讓你變胖。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tai" class="txs">我在越南就常常吃素。</div><div id="Taj" class="txs">還有，</div><div id="Tak" class="txs">這家餐廳的素菜看起來不油膩，</div><div id="Tal" class="txs">好像每一樣都值得試試。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tam" class="txs">我很好奇台灣女孩是不是都喜歡吃上青菜？</div><div id="Tan" class="txs">她們看起來個個都很瘦。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tao" class="txs">這也不一定，</div><div id="Tap" class="txs">我室友吃素。，</div><div id="Taq" class="txs">但是有一點胖。</div><div id="Tar" class="txs">如玉，</div><div id="Tas" class="txs">我記得妳男朋友不吃肉，</div><div id="Tat" class="txs">對不對？</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tau" class="txs">對，</div><div id="Tav" class="txs">和牛肉、</div><div id="Taw" class="txs">豬肉，</div><div id="Tax" class="txs">他不常吃，</div><div id="Tay" class="txs">他只吃魚。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Taz" class="txs">我聽說西方一些吃素的人跟我們不太一樣，</div><div id="Tba" class="txs">我們是完全不吃肉的。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbb" class="txs">我覺得吃素應該是為了健康。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbc" class="txs">的味道不要太崴，</div><div id="Tbd" class="txs">不要常吃炸的、</div><div id="Tbe" class="txs">烤的東西，</div><div id="Tbf" class="txs">就比較健康。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbg" class="txs">下軟有機會，</div><div id="Tbh" class="txs">請你們吃我做的越南素食。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbi" class="txs">我也可以做一些青菜沙拉請大家吃。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbj" class="txs">真的？</div><div id="Tbk" class="txs">太好了，</div><div id="Tbl" class="txs">我希刻多吃素，</div><div id="Tbm" class="txs">瘦一點，</div><div id="Tbn" class="txs">讓自己更健康。</div></div>
+<div class="b">&nbsp;</div>
+<div class="p_PlainText"><div id="Tbo" class="txs">快一點吃吧！</div><div id="Tbp" class="txs">我跟月美等一下還要準備下午的考試。</div></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="./audio/B2 L12-1.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+</body>
+</html>
